@@ -56,7 +56,7 @@ function Hero() {
           With a passion for developing modern web apps for commercial
           business.
         </p>
-        <a href={CV} download>
+        <a href={Devang's CV} download>
           <button className="hover">Resume</button>
         </a>
       </div>
