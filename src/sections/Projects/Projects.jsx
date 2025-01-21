@@ -2,7 +2,7 @@ import styles from './ProjectsStyles.module.css';
 import viberr from '../../assets/streaming-app-img.png';
 import vercel from '../../assets/vercel-app-img.png';
 import web from '../../assets/watch-web.png';
-import todo from '../../assets/todo.png'
+import chat from '../../assets/chat.png';
 import ProjectCard from '../../common/ProjectCard';
 
 function Projects() {
@@ -19,21 +19,22 @@ function Projects() {
         <ProjectCard
           src={vercel}
           link="https://github.com/Devang0907/vercel"
-          h3="Vercel-clone"
+          h3="Webnest"
           p="Web-Hosting Plateform"
         />
         <ProjectCard
           src={web}
           link="https://github.com/Devang0907/Watch-Website"
-          h3="Watch Ecommerce Web"
-          p="Website"
+          h3="Quantum"
+          p="Ecommerce Website"
         />
         <ProjectCard
-          src={todo}
-          link="https://github.com/Devang0907/Todo"
-          h3="Task Manager"
-          p="Website"
+          src={chat}
+          link="https://github.com/Devang0907/chat-app"
+          h3="Orbit"
+          p="Websocket Chat Website"
         />
+        
       </div>
     </section>
   );
