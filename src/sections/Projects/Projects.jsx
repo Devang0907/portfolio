@@ -4,6 +4,8 @@ import vercel from '../../assets/vercel-app-img.png';
 import web from '../../assets/watch-web.png';
 import chat from '../../assets/chat.png';
 import ProjectCard from '../../common/ProjectCard';
+import mcp from "../../assets/solana-mcp.png"
+import solback from "../../assets/solback.png"
 
 function Projects() {
   return (
@@ -34,7 +36,19 @@ function Projects() {
           h3="Orbit"
           p="Websocket Chat Website"
         />
-        
+        <ProjectCard
+          src={mcp}
+          link="https://github.com/Devang0907/Solana-MCP"
+          h3="Solona Bot"
+          p="MCP server for solana"
+        />
+        <ProjectCard
+          src={solback}
+          link="https://github.com/Devang0907/Solback"
+          h3="SolBack"
+          p="SOL Recovery Web App"
+        />
+
       </div>
     </section>
   );
