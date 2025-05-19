@@ -29,6 +29,7 @@ function Skills() {
         <SkillList src={checkMarkIcon} skill="PostgreSQL" />
         <SkillList src={checkMarkIcon} skill="MySQL" />
         <SkillList src={checkMarkIcon} skill="Redis" />
+        <SkillList src={checkMarkIcon} skill="MongoDB" />
       </div>
       <hr />
       <div className={styles.skillList}>
