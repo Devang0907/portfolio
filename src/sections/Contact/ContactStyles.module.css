@@ -2,78 +2,55 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
+  padding: 60px 20px;
 }
 
-form {
+/* Contact Links Styles */
+.contactLinks {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-top: 40px;
 }
 
-textarea,
-input:not([type='submit']) {
-  height: 50px;
-  padding-left: 16px;
-  width: 250px;
-}
-
-textarea {
-  padding-top: 16px;
-  resize: none;
-  height: 250px;
-}
-
-input,
-textarea {
-  border-radius: 20px;
-  border: #888 1px solid;
-  box-sizing: border-box;
-  justify-self: center;
-  background-color: var(--background-color);
-  color: var(--form-text-color);
-}
-
-::placeholder {
-  color: var(--form-text-color);
-}
-
-input[type='submit'] {
+.contactLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
   background-color: var(--btn-color);
   color: var(--btn-text-color);
-  border: none;
-  border-radius: 20px;
-  width: 126px;
-  height: 50px;
-  font-size: 20px;
-  font-weight: bold;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
-  margin: auto;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: all 200ms ease-in-out;
+  min-width: 200px;
 }
 
-input[type='submit']:hover {
-  transform: scale(1.05);
+.contactLink:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  background-color: var(--btn-hover-color, var(--btn-color));
 }
 
-input[type='submit']:active {
-  transform: translateY(2px);
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+.contactLink:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
+/* Responsive Design */
 @media (width >= 800px) {
-  textarea,
-  input:not([type='submit']) {
-    width: 600px;
-    font-size: 20px;
-  }
-  form {
+  .contactLinks {
+    flex-direction: row;
     gap: 40px;
   }
-}
-
-@media (width >= 1400px) {
-  textarea,
-  input:not([type='submit']) {
-    width: 800px;
+  
+  .contactLink {
+    min-width: 250px;
+    font-size: 20px;
+    padding: 25px 40px;
   }
 }

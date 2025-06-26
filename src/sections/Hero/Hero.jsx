@@ -8,7 +8,6 @@ import githubLight from '../../assets/github-light.svg';
 import githubDark from '../../assets/github-dark.svg';
 import linkedinLight from '../../assets/linkedin-light.svg';
 import linkedinDark from '../../assets/linkedin-dark.svg';
-import CV from '../../assets/CV.pdf';
 import { useTheme } from '../../common/ThemeContext';
 
 function Hero() {
@@ -56,7 +55,7 @@ function Hero() {
           With a passion for developing modern web apps for commercial
           business.
         </p>
-        <a href={CV} download>
+        <a href={"https://drive.google.com/file/d/1m8iXzKguRfd0htvXjnGFkliIuVJv2zPr/view?usp=drivesdk"} target="_blank">
           <button className="hover">Resume</button>
         </a>
       </div>
