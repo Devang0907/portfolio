@@ -6,6 +6,7 @@ import chat from '../../assets/chat.png';
 import ProjectCard from '../../common/ProjectCard';
 import mcp from "../../assets/solana-mcp.png"
 import solback from "../../assets/solback.png"
+import swap from "../../assets/swap.png"
 
 function Projects() {
   return (
@@ -47,6 +48,12 @@ function Projects() {
           link="https://github.com/Devang0907/Solback"
           h3="SolBack"
           p="SOL Recovery Web App"
+        />
+        <ProjectCard
+          src={swap}
+          link="https://github.com/Devang0907/Token-Flow"
+          h3="Token Flow"
+          p="Crypto swap visualizer"
         />
 
       </div>
