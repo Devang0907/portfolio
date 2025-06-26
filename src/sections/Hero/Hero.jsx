@@ -51,13 +51,11 @@ function Hero() {
             <img src={linkedinIcon} alt="Linkedin icon" />
           </a>
         </span>
-        <p className={styles.description}>
-          With a passion for developing modern web apps for commercial
-          business.
-        </p>
-        <a href={"https://drive.google.com/file/d/1m8iXzKguRfd0htvXjnGFkliIuVJv2zPr/view?usp=drivesdk"} target="_blank">
-          <button className="hover">Resume</button>
-        </a>
+        <div style={{marginTop: '15px'}}>
+          <a href={"https://drive.google.com/file/d/1m8iXzKguRfd0htvXjnGFkliIuVJv2zPr/view?usp=drivesdk"} target="_blank">
+            <button className="hover">Resume</button>
+          </a>
+        </div>
       </div>
     </section>
   );
