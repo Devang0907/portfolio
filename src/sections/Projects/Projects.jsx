@@ -7,6 +7,7 @@ import ProjectCard from '../../common/ProjectCard';
 import mcp from "../../assets/solana-mcp.png"
 import solback from "../../assets/solback.png"
 import swap from "../../assets/swap.png"
+import eternal from "../../assets/eternal.png"
 
 function Projects() {
   return (
@@ -48,6 +49,12 @@ function Projects() {
           link="https://github.com/Devang0907/Solback"
           h3="SolBack"
           p="SOL Recovery Web App"
+        />
+        <ProjectCard
+          src={eternal}
+          link="https://github.com/Devang0907/Eternal"
+          h3="Eternal"
+          p="Crypto Inheritance Tool"
         />
         <ProjectCard
           src={swap}
