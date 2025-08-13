@@ -4,7 +4,7 @@
     align-items: center;
     padding: clamp(32px, 8vw, 48px) clamp(12px, 4vw, 16px);
     background: linear-gradient(180deg, var(--background-color), rgba(var(--background-color-rgb), 0.95));
-    min-height: 100vh;
+    min-height: 40vh;
 }
 
 .experienceCard {

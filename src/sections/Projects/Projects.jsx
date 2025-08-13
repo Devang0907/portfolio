@@ -26,12 +26,12 @@ function Projects() {
           h3="Webnest"
           p="Web-Hosting Plateform"
         />
-        <ProjectCard
+        {/* <ProjectCard
           src={web}
           link="https://github.com/Devang0907/Watch-Website"
           h3="Quantum"
           p="Ecommerce Website"
-        />
+        /> */}
         <ProjectCard
           src={chat}
           link="https://github.com/Devang0907/chat-app"
