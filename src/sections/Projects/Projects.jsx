@@ -8,6 +8,7 @@ import mcp from "../../assets/solana-mcp.png"
 import solback from "../../assets/solback.png"
 import swap from "../../assets/swap.png"
 import eternal from "../../assets/eternal.png"
+import globe from "../../assets/globe.png"
 
 function Projects() {
   return (
@@ -55,6 +56,12 @@ function Projects() {
           link="https://github.com/Devang0907/Eternal"
           h3="Eternal"
           p="Crypto Inheritance Tool"
+        />
+        <ProjectCard
+          src={globe}
+          link="https://github.com/Devang0907/web-uptime-monitor"
+          h3="Better UpTime Monitor"
+          p="Decentralized Web UpTime Monitor"
         />
         <ProjectCard
           src={swap}
