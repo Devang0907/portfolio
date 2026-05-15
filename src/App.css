@@ -18,6 +18,11 @@
   --footer-text-color: #bbb;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
+
 body {
   background-color: var(--background-color);
   display: flex;
@@ -29,6 +34,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 60px;
+  padding-top: 60px;
 }
 
 h1,

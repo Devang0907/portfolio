@@ -1,7 +1,9 @@
 .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
+  gap: 48px;
 
   span {
     display: flex;
@@ -14,34 +16,45 @@
   }
 }
 
+.skillGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  width: 100%;
+}
+
+.groupLabel {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: var(--form-text-color);
+  opacity: 0.55;
+  margin: 0;
+  padding: 0;
+}
+
 .skillList {
   display: flex;
-  justify-content: space-evenly;
-  align-self: center;
+  justify-content: center;
   flex-wrap: wrap;
-  row-gap: 40px;
+  row-gap: 28px;
+  column-gap: 20px;
   max-width: 26ch;
 }
 
-hr {
-  width: 100px;
-  height: 1px;
-  border: none;
-  background-color: var(--text-color);
-  margin: 30px auto;
-}
-
 @media (width >= 800px) {
+  .container {
+    gap: 56px;
+  }
+
   .skillList {
     max-width: fit-content;
-    gap: 30px;
+    column-gap: 30px;
 
     p {
       font-size: 20px;
     }
-  }
-
-  hr {
-    width: 300px;
   }
 }

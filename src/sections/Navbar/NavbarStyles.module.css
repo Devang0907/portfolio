@@ -1,0 +1,56 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 clamp(16px, 4vw, 48px);
+  height: 60px;
+  background: var(--background-color);
+  border-bottom: 1px solid var(--btn-color);
+}
+
+.logo {
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-color);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.links {
+  display: none;
+  list-style: none;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.6;
+  transition: opacity 200ms ease;
+}
+
+.links a:hover {
+  opacity: 1;
+}
+
+.themeToggle {
+  width: 24px;
+  cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  .links {
+    display: flex;
+  }
+}
