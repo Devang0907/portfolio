@@ -13,6 +13,16 @@
   border-bottom: 1px solid var(--btn-color);
 }
 
+.progressBar {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  height: 3px;
+  background: var(--btn-color);
+  transition: width 80ms linear;
+  border-radius: 0 2px 2px 0;
+}
+
 .logo {
   font-family: 'Rubik', sans-serif;
   font-size: 20px;
