@@ -20,6 +20,22 @@ function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleThemeToggle = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = rect.left + rect.width / 2;
+    const y = rect.top + rect.height / 2;
+
+    document.documentElement.style.setProperty('--ripple-x', `${x}px`);
+    document.documentElement.style.setProperty('--ripple-y', `${y}px`);
+
+    if (!document.startViewTransition) {
+      toggleTheme();
+      return;
+    }
+
+    document.startViewTransition(toggleTheme);
+  };
+
   return (
     <nav className={styles.nav}>
       <a href="#hero" className={styles.logo}>Devang</a>
@@ -33,7 +49,7 @@ function Navbar() {
         src={themeIcon}
         alt="Toggle theme"
         className={styles.themeToggle}
-        onClick={toggleTheme}
+        onClick={handleThemeToggle}
       />
       <div className={styles.progressBar} style={{ width: `${progress}%` }} />
     </nav>
