@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function ProjectCard({ src, link, h3, p }) {
   return (

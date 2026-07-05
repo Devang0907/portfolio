@@ -20,7 +20,7 @@
 
 /* Vertical line */
 .timeline::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 6px;
   top: 10px;
@@ -61,7 +61,9 @@
   border-radius: 12px;
   padding: 20px 24px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  transition: transform 250ms ease, box-shadow 250ms ease;
+  transition:
+    transform 250ms ease,
+    box-shadow 250ms ease;
 }
 
 .card:hover {

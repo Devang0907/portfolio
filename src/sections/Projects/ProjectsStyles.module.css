@@ -22,7 +22,9 @@
   border-radius: 16px;
   padding: 14px;
   box-sizing: border-box;
-  transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+  transition:
+    transform 200ms ease-in-out,
+    box-shadow 200ms ease-in-out;
 }
 
 .projectsContainer a:hover {

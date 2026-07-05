@@ -8,7 +8,7 @@
   --footer-text-color: #888;
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --background-color: #000000;
   --btn-color: #fff;
   --btn-text-color: #222;
@@ -24,8 +24,12 @@ html {
 }
 
 @keyframes theme-ripple {
-  from { clip-path: circle(0px at var(--ripple-x, 50%) var(--ripple-y, 50%)); }
-  to   { clip-path: circle(150vmax at var(--ripple-x, 50%) var(--ripple-y, 50%)); }
+  from {
+    clip-path: circle(0px at var(--ripple-x, 50%) var(--ripple-y, 50%));
+  }
+  to {
+    clip-path: circle(150vmax at var(--ripple-x, 50%) var(--ripple-y, 50%));
+  }
 }
 
 ::view-transition-old(root) {
@@ -69,7 +73,7 @@ p {
 h2,
 h3,
 p {
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
 h1,
@@ -83,7 +87,7 @@ h3 {
 }
 
 h1 {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 32px;
 }
 

@@ -1,14 +1,15 @@
-import styles from './ProjectsStyles.module.css';
-import viberr from '../../assets/streaming-app-img.png';
-import vercel from '../../assets/vercel-app-img.png';
-import web from '../../assets/watch-web.png';
-import chat from '../../assets/chat.png';
-import ProjectCard from '../../common/ProjectCard';
-import mcp from "../../assets/solana-mcp.png"
-import solback from "../../assets/solback.png"
-import swap from "../../assets/swap.png"
-import eternal from "../../assets/eternal.png"
-import globe from "../../assets/globe.png"
+import styles from "./ProjectsStyles.module.css";
+import viberr from "../../assets/streaming-app-img.png";
+import vercel from "../../assets/vercel-app-img.png";
+import web from "../../assets/watch-web.png";
+import chat from "../../assets/chat.png";
+import ProjectCard from "../../common/ProjectCard";
+import mcp from "../../assets/solana-mcp.png";
+import solback from "../../assets/solback.png";
+import swap from "../../assets/swap.png";
+import eternal from "../../assets/eternal.png";
+import globe from "../../assets/globe.png";
+import agent from "../../assets/agent.png";
 
 function Projects() {
   return (
@@ -27,12 +28,12 @@ function Projects() {
           h3="Webnest"
           p="Web-Hosting Plateform"
         />
-        {/* <ProjectCard
-          src={web}
-          link="https://github.com/Devang0907/Watch-Website"
-          h3="Quantum"
-          p="Ecommerce Website"
-        /> */}
+        <ProjectCard
+          src={agent}
+          link="https://github.com/Devang0907/agent-dev"
+          h3="Agent Dev"
+          p="Terminal Based AI Agent Harness"
+        />
         <ProjectCard
           src={chat}
           link="https://github.com/Devang0907/chat-app"
@@ -60,8 +61,14 @@ function Projects() {
         <ProjectCard
           src={globe}
           link="https://github.com/Devang0907/web-uptime-monitor"
-          h3="Better UpTime Monitor"
+          h3="UpTime Monitor"
           p="Decentralized Web UpTime Monitor"
+        />
+        <ProjectCard
+          src={web}
+          link="https://github.com/Devang0907/Watch-Website"
+          h3="Quantum"
+          p="Ecommerce Website"
         />
         <ProjectCard
           src={swap}
@@ -69,7 +76,6 @@ function Projects() {
           h3="Token Flow"
           p="Crypto swap visualizer"
         />
-
       </div>
     </section>
   );
